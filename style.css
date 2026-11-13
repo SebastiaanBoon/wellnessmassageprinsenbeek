@@ -76,3 +76,31 @@ nav a[aria-current="page"]:not(.cta):not(.btn):not(.call){text-decoration:underl
 .sn-card span{display:block;opacity:.8;font-size:.95em;line-height:1.4}
 .sn-card:hover,.sn-card:focus-visible{border-color:currentColor}
 /* sitenav:end */
+/* voorbeeld-formulier:start */
+@layer sn{.sn-form button.btn{border:0;font:inherit;cursor:pointer;line-height:1.2}}
+.sn-formsec{padding:36px 0 72px}
+.sn-formwrap{max-width:1100px;margin:0 auto;padding:0 20px;box-sizing:border-box}
+.sn-formwrap>h2{margin:0 0 12px}
+.sn-formwrap>.sn-lead,.sn-formwrap>.sn-form,.sn-formwrap>.sn-done{max-width:720px}
+.sn-formwrap .sn-lead{margin:0 0 24px;opacity:.85}
+.sn-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.sn-field{display:flex;flex-direction:column;gap:6px;min-width:0;text-align:left}
+.sn-field.full{grid-column:1/-1}
+.sn-field label{font-size:14px;font-weight:600}
+.sn-field input,.sn-field select,.sn-field textarea{font:inherit;font-size:16px;line-height:1.4;color:inherit;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.55);border-radius:8px;padding:11px 12px;width:100%;box-sizing:border-box;min-width:0;max-width:100%;-webkit-appearance:none;appearance:none}
+.sn-field select{background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 15px) 50%;background-size:5px 5px;background-repeat:no-repeat;padding-right:38px}
+.sn-field select option{color:#111;background:#fff}
+.sn-field textarea{resize:vertical}
+.sn-field input:focus,.sn-field select:focus,.sn-field textarea:focus{outline:2px solid currentColor;outline-offset:1px}
+.sn-done{padding:28px;border:1px solid rgba(128,128,128,.55);border-radius:12px;background:rgba(128,128,128,.1)}
+.sn-done h2{margin:0 0 10px}
+.sn-done p{margin:0}
+.sn-done a{text-decoration:underline;text-underline-offset:3px;font-weight:600}
+.sn-formlink{padding:0 0 56px}
+@media(max-width:640px){.sn-form{grid-template-columns:1fr}.sn-formsec{padding:24px 0 56px}}
+/* voorbeeld-formulier:end */
+/* voorbeeldbanner:start */
+.vb-banner{display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;gap:2px 14px;padding:8px 16px;background:#26231f;color:#e9e6df;font-size:13px;line-height:1.45;letter-spacing:0;text-transform:none;font-weight:400;text-align:center;position:relative;z-index:1000}
+.vb-banner a{color:inherit;opacity:.8;text-decoration:underline;text-underline-offset:3px;font-size:12px;font-weight:400;white-space:nowrap;letter-spacing:0;text-transform:none}
+.vb-banner a:hover{opacity:1}
+/* voorbeeldbanner:end */
